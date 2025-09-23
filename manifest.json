@@ -1,7 +1,8 @@
 {
   "name": "Nightly Wolf",
-  "version": "1.0",
+  "version": "1.0.0",
   "minAppVersion": "1.1.9",
   "author": "jotacode",
-  "authorUrl": "https://jotacode.dev/"
+  "authorUrl": "https://jotacode.dev/",
+  "fundingUrl": "https://github.com/sponsors/seu-usuario"
 }
