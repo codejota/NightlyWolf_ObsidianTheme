@@ -21,9 +21,9 @@ Designed with a focus on simplicity, it avoids flashy visuals and harsh colors, 
 
 _(Here you can add screenshots of your theme in action. I recommend capturing the main view, the calendar, a Kanban board, and the file explorer with the custom logo)_
 
-|                     Main View                      |
-| :------------------------------------------------: |
-| ![Texto alternativo da imagem](assets/print01.png) |
+|               Main View               |             on VS Code             |
+| :-----------------------------------: | :--------------------------------: |
+| ![Obsidian Theme](assets/print01.png) | ![VS Code Theme](assets/image.png) |
 
 ### Features
 
