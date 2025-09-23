@@ -33,20 +33,20 @@ Designed with a focus on simplicity, it avoids flashy visuals and harsh colors, 
 
 ### Installation
 
-#### Method 1: Manual Installation
-
-1.  Download the `theme.css` file from this repository.
-2.  In Obsidian, go to `Settings` > `Appearance`.
-3.  Under the `Themes` section, click the `Manage` button and then open the themes folder.
-4.  Place the downloaded `theme.css` file inside this folder.
-5.  Return to Obsidian, click the refresh button next to `Themes`, and select `Nightly Wolf` from the dropdown menu.
-
-#### Method 2: As a CSS Snippet
+#### Method 1: From Obsidian Community Themes (Recommended)
 
 1.  In Obsidian, go to `Settings` > `Appearance`.
-2.  Select `manage` in left side.
-3.  Search for `Nightly Wolf`
-4.  Click `Install and use` to install the theme.
+2.  Under the `Themes` section, click on `Manage`.
+3.  In the search bar, type `Nightly Wolf`.
+4.  Click `Install and use` to apply the theme.
+
+#### Method 2: Manual Installation
+
+1.  Download the `theme.css` file from the [latest release](https://github.com/codejota/nightly-wolf/releases/latest) on GitHub.
+2.  In Obsidian, go to `Settings` > `Appearance`.
+3.  Under the `Themes` section, click the folder icon to open the themes folder (`YourVault/.obsidian/themes`).
+4.  Place the downloaded `theme.css` file inside this folder.
+5.  Return to Obsidian, click the refresh button next to `Themes`, and select `Nightly Wolf` from the dropdown menu.
 
 ### Customization: The Vault Logo
 
@@ -69,8 +69,11 @@ One of the key features of this theme is the ability to display a custom image a
         min-height: 200px;
         border-radius: 15px;
         border: 2px solid rgb(149, 21, 21);
-        background-image: url("https://i.imgur.com/30KbqyV.jpeg");
-        /* here you can put any image link you want */
+        background-image: url("[https://i.imgur.com/30KbqyV.jpeg](https://i.imgur.com/30KbqyV.jpeg)");
+        /* Here you can put any image link you want. */
+        /* For local images, Obsidian requires a specific format: */
+        /* Windows: url("app://local/C:/Users/YourUser/path/to/image.png") */
+        /* macOS/Linux: url("app://local//Users/YourUser/path/to/image.png") */
       }
       ```
     - Replace the URL inside `url()` with a link to your desired image.
