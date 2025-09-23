@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| Nightly Wolf Theme 
+| Nightly Wolf Theme - jotacode.dev
 |--------------------------------------------------------------------------
 |
 | This theme enhances the Obsidian interface with transparency, custom
@@ -20,7 +20,7 @@
 */
 :root {
   --nightly-wolf-translucency-strength: 0.25;
-  --nightly-wolf-translucency-image: url("https://images.unsplash.com/photo-1707494966495-a2cc8c1dac1f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
 }
 
 body {
@@ -83,20 +83,24 @@ body {
   --en-opacity: 1;
   --tab-container-background: transparent;
 
-  /* ADDED: Reddish indentation guides for file explorer and editor */
+  /* --- Custom Colors for Indentation Guides & List Lines --- */
+  --guide-color: rgba(204, 36, 36, 0.3);
+  --list-marker-color: #992929;
+  --tree-line-color: #992929;
   --p-tree-line-color: #992929;
   --p-tree-line-color-active: #E54545;
-  --indentation-guide: rgba(204, 36, 36, 0.25);
-  --indentation-guide-active: rgba(204, 36, 36, 0.5);
+  --indentation-guide: rgba(204, 36, 36, 0.3);
+  --indentation-guide-active: rgba(204, 36, 36, 0.6);
 
   /* Custom SVG Icons for UI Elements */
   --lucide-x: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
   --lucide-minus: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3C/svg%3E");
   --lucide-maximize: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 3H5a2 2 0 0 0-2 2v3'%3E%3C/path%3E%3Cpath d='M21 8V5a2 2 0 0 0-2-2h-3'%3E%3C/path%3E%3Cpath d='M3 16v3a2 2 0 0 0 2 2h3'%3E%3C/path%3E%3Cpath d='M16 21h3a2 2 0 0 0 2-2v-3'%3E%3C/path%3E%3C/svg%3E");
   --lucide-minimize: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-minimize'%3E%3Cpath d='M8 3v3a2 2 0 0 1-2 2H3'/%3E%3Cpath d='M21 8h-3a2 2 0 0 1-2-2V3'/%3E%3Cpath d='M3 16h3a2 2 0 0 1 2 2v3'/%3E%3Cpath d='M16 21v-3a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E");
-  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%23ffffff90' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
-  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='8' height='8' fill='none' stroke='%2300000090' stroke-width='5%' stroke-linecap='round' stroke-linejoin='round' class='logo-wireframe'%3E%3Cpath d='M172.7 461.6c73.6-149.1 2.1-217-43.7-246.9m72 96.7c71.6-17.3 141-16.3 189.8 88.5m-114-96.3c-69.6-174 44.6-181 16.3-273.6m97.7 370c1.6-3 3.3-5.8 5.1-8.6 20-29.9 34.2-53.2 41.4-65.3a16 16 0 0 0-1.2-17.7 342.1 342.1 0 0 1-40.2-66.1c-10.9-26-12.5-66.5-12.6-86.2 0-7.4-2.4-14.7-7-20.6l-81.8-104a32 32 0 0 0-1.4-1.5m97.7 370a172.8 172.8 0 0 0-18 59c-2.9 21.5-24 38.4-45 32.6-30-8.3-64.5-21.1-95.7-23.5l-47.8-3.6c-7.7-.6-15-4-20.3-9.5l-82.3-84.8c-9-9.2-11.4-23-6.2-34.8 0 0 51-111.8 52.8-117.7l.7-3M293.1 30a31.5 31.5 0 0 0-44.4-2.3l-97.4 87.5c-5.4 5-9 11.5-10 18.8-3.7 24.5-9.7 68-12.3 80.7'%3E%3C/path%3E%3C/svg%3E");
+  --obsidian-logo-small: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ffffff90' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5.812 7s-.453.628-.996 1.667M18.188 7s.453.628.997 1.667m-14.37 0C4.008 10.214 3 12.674 3 15.333C5.813 15.333 7.5 17 7.5 17s1.125 5 4.5 5s4.5-5 4.5-5s1.688-1.667 4.5-1.667c0-2.659-1.007-5.119-1.816-6.666m-14.368 0S1.875 6.444 4.816 2c.996.556 3.809 2.778 3.809 2.778S10.313 3.667 12 3.667c1.688 0 3.375 1.11 3.375 1.11S18.188 2.557 19.313 2c2.812 4.445-.128 6.667-.128 6.667M11 18h1m1 0h-1m0 0v1m-3.5-6.5L10 14m5.5-1.5L14 14'/%3E%3C/svg%3E");
+  --obsidian-logo-small-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%2300000090' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M5.812 7s-.453.628-.996 1.667M18.188 7s.453.628.997 1.667m-14.37 0C4.008 10.214 3 12.674 3 15.333C5.813 15.333 7.5 17 7.5 17s1.125 5 4.5 5s4.5-5 4.5-5s1.688-1.667 4.5-1.667c0-2.659-1.007-5.119-1.816-6.666m-14.368 0S1.875 6.444 4.816 2c.996.556 3.809 2.778 3.809 2.778S10.313 3.667 12 3.667c1.688 0 3.375 1.11 3.375 1.11S18.188 2.557 19.313 2c2.812 4.445-.128 6.667-.128 6.667M11 18h1m1 0h-1m0 0v1m-3.5-6.5L10 14m5.5-1.5L14 14'/%3E%3C/svg%3E");
 }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -108,8 +112,15 @@ body {
 |
 */
 body {
-  /* UPDATED: Set to the darkest color for sidebars/background */
-  background-color: #13101A;
+  background-color: transparent;
+}
+
+.app-container {
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This keeps the image static while you scroll */
 }
 
 .view-content,
@@ -295,8 +306,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .mod-root .workspace-tab-header-inner {
   padding-left: 12px;
   padding-right: 8px;
-  /* UPDATED: Set the default/inactive tab text color */
-  color: #51446E;
+  color: #6a6e44;
 }
 
 .workspace .mod-root .workspace-tab-header-inner::after {
@@ -305,7 +315,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
   background-color: rgba(var(--grey-600-rgb), var(--en-opacity));
-  /* UPDATED: Set the active tab text color */
   color: #D89408;
 }
 
@@ -360,6 +369,26 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .mod-left-split .workspace-leaf-content,
 .mod-right-split .workspace-leaf-content {
   background-color: #13101A !important;
+}
+
+/* --- Sidebar Content Pane Backgrounds (Theme-Specific) --- */
+
+/* Light Theme: White with Translucency */
+body.theme-light .mod-left-split .workspace-leaf-content,
+body.theme-light .mod-right-split .workspace-leaf-content {
+  background-color: rgba(196, 189, 201, 1) !important;
+  backdrop-filter: blur(16px);
+}
+
+
+body.theme-dark .mod-right-split .workspace-leaf-content {
+  background-color: #13101A !important;
+
+}
+
+body.theme-dark .mod-left-split .workspace-leaf-content {
+  background-color: rgba(19, 16, 26, 0.6) !important;
+  backdrop-filter: blur(44px);
 }
 
 /*
@@ -1679,8 +1708,8 @@ body.theme-dark {
   --accent-s: 83%;
   --accent-l: 69%;
   --highlight-hue: 37;
-  --workspace-background-translucent: rgba(var(--grey-900-rgb), 0.2);
-  --hr-color: #ffffff90;
+  --workspace-background-translucent: rgba(var(--grey-900-rgb), 1);
+  --hr-color: #6a6161b3;
 }
 
 /* --- Base Light Theme --- */
@@ -2438,7 +2467,7 @@ body.nightly-wolf-theme-light-atom.theme-light {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #51446E;
+  background-color: #6b090a71;
   border-radius: 5px;
   border: 2px solid #13101A;
 }
@@ -2446,6 +2475,17 @@ body.nightly-wolf-theme-light-atom.theme-light {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #D89408;
 }
+
+/* This targets the collapse/expand icons (the ">" arrows) */
+.collapse-icon {
+  color: #99292978 !important;
+}
+
+/* This targets the vertical "connection lines" in lists and outlines */
+.cm-indent::before {
+  border-color: #9c080845 !important;
+}
+
 
 /*
 |--------------------------------------------------------------------------
@@ -2495,7 +2535,7 @@ body.nightly-wolf-theme-light-atom.theme-light {
 .nav-file-title,
 .nav-folder-title {
   font-size: 12px;
-  line-height: 10px;
+  line-height: 12px;
 }
 
 .search-result-file-title {
@@ -2522,4 +2562,5 @@ div[data-path="0-Vault-Logo"] {
   border-radius: 15px;
   border: 2px solid rgb(149, 21, 21);
   background-image: url('https://i.imgur.com/30KbqyV.jpeg');
+  /* here you can put any image link you want */
 }
