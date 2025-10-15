@@ -11,7 +11,7 @@
 
 ---
 
-### Description
+### Description.
 
 **Nightly Wolf for Obsidian** brings the refined and distraction-free coding experience of my other theme: [Nightly Wolf Theme for VS Code](https://marketplace.visualstudio.com/items?itemName=jotacode.nightly-wolf-theme) to your personal knowledge base.
 
